@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="./bootstrap-4.1.2-dist/css/bootstrap.css"> 
-    <title>AthLEAD</title>
+    <title>Check in App</title>
   </head>  
  
  <body>
@@ -25,143 +25,57 @@
     <div class="col-sm-12">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-text">Entrepreneur Project</h5> 
-          <h6>May 2017, Principles of Engineering Design</h6> <!-- Project title,
-          class, and date -->
-          <p>The goal of this four-person project was to design a solution to any
-          real-world problem. My team decided to build a physical prototype, using
-          VEX parts, of a machine that would remove unwanted sediment in reservoirs.
-          We had to use lightweight yet strong material, such as steel and titanium 
-          for the frame, while designing a net system to pick up sediment, which was
-          the most cost efficient system available.
+          <h5 class="card-text">Our easy-to-use app allows athletes to check
+          themselves in for their track event, saving time, paper, and money.
+          </h5> 
+    
+          <p>AthLEAD's check-in app, when installed on an iPAD, includes an easy to use, practical user
+          interface to allow for quick transactions, along with backend software to
+          pull information directly from track meet result websites to enable parsing
+          given a name or event. The point of this software 
+          is to combat the disorganized check in systems that are currently used at track meets,
+          while connecting directly to the hip number for a smoother check-in process.
           </p>
-          <p>
-           Our final solution consisted of a submarine with a rigid, metal exterior 
-           frame and central cavity, equipped at the front with wire mesh and light
-           sensor at the front opening, and a fine net and metal plates on the rear
-           opening. The submarine would patrol the reservoir using its mechanical 
-           propellers, and begin filtering sediment in the back net when the light 
-           sensor detected the water was murky and full of suspended sediment. 
-          </p>
-          <p>
-          As project leader, I was responsible for managing most of the project 
-          <a href="Scomparin_EntrepreneurProject.pdf ">documentation</a>, part of the 
-          <a href="SedibotPresentation.pdf">presentation</a>, communicating with my teammates 
-          regarding the project design and timeline, and designing the submarine's exterior frame. I 
-          learned a lot in my field of interest, environmental engineering, by 
-          analyzing how different designs would respond to a complex environmental
-          problem (sediment accumulation). However, this project also introduced 
-          me to a multi-disciplinary problem-solving approach, as I was also exposed
-          to the programming of the sensor and testing of the submarine's mechanical structure.
-          </p>
-          <p>
-          <a href="EntrepreneurRubric.pdf">Project Rubric</a>
-          </p>
-          </p><!-- Brief para describing project objective, solution, and skills 
-          portrayed -->
-          <p style="font-style:italic">From left to right: Final Sedibot design, Sedibot code,
-          visual of sedimentation, and Sedibot net.
+           <p style="font-style:italic">Check out this quick vid of how our software works:
           </p>
           <div class="container">
           <div class="row">
           <div class="col-3">
-            <img style="" src="Images/Sedibotannotated.png" height="150px"/>
-          </div>
-          <div class="col-3">
-            <img style="" src="Images/SedibotCode.png" height="150px"/>
-          </div>
-          <div class="col-3">
-             <img style="" src="Images/SedimentExample.png" height="150px"/>
-          </div>
-          <div class="col-3">
-             <img style="" src="Images/SedibotNet.png" height="150px" />
+            <video width="960" height="720" controls>
+            <source src="Images/App.mov">
+            </video>
           </div>
           </div>
-          <!--
-          <img style="margin-left:30px" src="Images/Sedibotannotated.png" height="150px" align="right"/>
-          <img style="margin-right:300px" src="Images/SedibotCode.png" height="150px" align="right"/>
-          <img style="margin-right:30px" src="Images/SedimentExample.png" height="150px" align="left"/>
-          <img style="margin-left:300px" src="Images/SedibotNet.png" height="150px" align="left"/>
-          -->
+          </div>
+          <p>
+           The app combines web-scraping with Java substring logic and loops to form a 
+           search engine, capable of running through raw data from track meet result 
+           websites and organizing athletes into various lists based on their races. 
+           Utilizing the Java library jsoup, the app is able to pull information directly
+           from the html paragraph tags of the website of choice (examples: Diablo Timing,
+           Adkins Trak). Once the entire string of races is pulled from the given URL and 
+           stored locally in the Java code, the program then goes about dividing the string up
+           by events, then the events into heats, then the heats into athletes. Finally, 
+           the code adds each athlete to an initialized global arraylist, which it can then 
+           search through by athlete name.
+          </p>
+      
+         
+         <p>
+           Each athlete is stored as an "Athlete" class, which allows us to store 
+           different variables for each person including their name, grade, school,
+           event, heat, and most importantly, what their hip number is and whether 
+           they've been checked in. Finally, the app uses the check-in iPAD's near field
+           communication technology (NFC), to send the hip number value directly to our
+           smart tech hip number.
+
+         </p>
         </div>
       </div>
     </div>
   </section>
   
-  <section>
-    <div class="col-sm-12">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-text">Project 3.2.4  Machine Control Design</h5> 
-          <h6>April 2017, Principles of Engineering Design</h6> <!-- Project title,
-          class, and date -->
-          <p>The objective for this project was to build a machine satisfying an 
-          unmet human need, while using VEX robotics hardware, including sensors, 
-          as well as the RobotC programming language. My group was asked to find 
-          several different winch, pulley, rack and pinion, and drum systems that
-          would satisfy the design requirement for our machine. We built an elevator
-          that utilized a sensor and button system to pick up people on different 
-          floors quickly, as well as come down to the ground floor immediately in 
-          case of an emergency such as an earthquake, or when not used for a certain 
-          period of time.
-          </p>
-          <p>
-          We used the rack and pinion system as it provided the greatest structural 
-          stability for the design; with a gear attached to one side of the elevator,
-          the other side was supported by a steel slider. Additionally, we used an ultrasonic
-          sensor to measure the height of the elevator to make it stop at the correct 
-          floor and bump switches to call the elevator to each floor. During the project,
-          I was responsible for the physical design of the elevator using VEX parts, 
-          including spacing out the sensors correctly to match input values used in the
-          RobotC program, allowing me to work directly with the programmer and the 
-          other members of the team working on <a href="Scomparin_MachineControlProject.pdf">documenting</a> the project updates. The
-          biggest issue was getting the elevator to move up and down smoothly along 
-          the slider- often, the gear would get stuck in the rack because of too much 
-          frictional force. This issue was solved by rebuilding the elevator to a new
-          size and using more flexible metal parts.
-          </p>
-          <p>
-          This project was eye-opening because I was able to see how mechanics, electronics,
-          and programming were combined into one cohesive design. I now have a better
-          idea of how to build "smart" systems using sensors and could apply this to
-          both the mechanical and environmental fields by designing efficient home 
-          energy systems that react to differences in temperature and light. 
-          </p>
-          <p>
-          <a href="Scomparin_MachineControlDesign_Rubric.pdf">Project Rubric</a>
-          </p>
-          </p><!-- Brief para describing project objective, solution, and skills 
-          portrayed -->
-          <p style="font-style:italic">From left to right: Final elevator side view, top view,
-          rack and pinion brainstorm sketch, and rack and pinion flowchart.
-          </p>
-          
-          <div class="container">
-          <div class="row">
-          <div class="col-3">
-            <img style="" src="Images/MachineControlSide.png" height="150px"/>
-          </div>
-          <div class="col-3">
-            <img style="" src="Images/MachineControlTop.png" height="150px"/>
-          </div>
-          <div class="col-3">
-             <img style="" src="Images/MachineControlDrawing.jpg" height="150px"/>
-          </div>
-          <div class="col-3">
-             <img style="" src="Images/MachineControlFlowchart.jpg" height="150px" />
-          </div>
-          </div>
-          
-          <!--
-          <img style="margin-left:30px" src="Images/MachineControlSide.png" height="150px" align="right"/>
-          <img style="margin-right:300px" src="Images/MachineControlTop.png" height="150px" align="right"/>
-          <img style="margin-right:30px" src="Images/MachineControlDrawing.jpg" height="150px" align="left"/>
-          <img style="margin-left:300px" src="Images/MachineControlFlowchart.jpg" height="150px" align="left"/>
-          -->
-        </div>
-      </div>
-    </div>
-  </section>
+ 
   
   <div class="col-sm-12">
     <a href="index.html">Back to Home</a>
